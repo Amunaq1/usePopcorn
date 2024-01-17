@@ -19,7 +19,7 @@ export function Main({
     function () {
       async function getMovieDetails() {
         const res = await fetch(
-          `http://www.omdbapi.com/?apikey=${KEY}&i=${movieClicked?.imdbID}`
+          `https://www.omdbapi.com/?apikey=${KEY}&i=${movieClicked?.imdbID}`
         );
         const data = await res.json();
         setSelectedMovie(data);
